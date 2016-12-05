@@ -393,11 +393,13 @@
             readerModel.prevChapter(function(data){
                 readerUI(data);
             });
+            window.scrollTo(0,0);
         });
         $('#next_button').click(function(){
             readerModel.nextChapter(function(data){
                 readerUI(data);
-            })
+            });
+            window.scrollTo(0,0);
         });
     }
 
